@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#FCF7FF"
+        android:gravity="bottom|end"
+        android:padding="16dp"
+        android:text="LastName\n12345678"
+        android:textColor="#000000"
+        android:textSize="36sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:padding="8dp">
+
+        <Button
+            style="@style/CalcKey"
+            android:backgroundTint="#F44336"
+            android:onClick="onKey"
+            android:text="C" />
+        <Button android:onClick="onKey" android:text="(" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text=")" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="/" android:backgroundTint="#FF9800" style="@style/CalcKey" />
+
+        <Button android:onClick="onKey" android:text="7" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="8" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="9" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="*" android:backgroundTint="#FF9800" style="@style/CalcKey" />
+
+        <Button android:onClick="onKey" android:text="4" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="5" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="6" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="+" android:backgroundTint="#FF9800" style="@style/CalcKey" />
+
+        <Button android:onClick="onKey" android:text="1" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="2" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="3" android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="-" android:backgroundTint="#FF9800" style="@style/CalcKey" />
+
+        <Button
+            style="@style/CalcKey"
+            android:backgroundTint="#9C27B0"
+            android:onClick="onKey"
+            android:text="AC" />
+        <Button android:onClick="onKey" android:text="0" android:backgroundTint="#FF8033" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="." android:backgroundTint="#5F5B73" style="@style/CalcKey" />
+        <Button android:onClick="onKey" android:text="=" android:backgroundTint="#FF9800" style="@style/CalcKey" />
+    </GridLayout>
+</LinearLayout>
